@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" />
+        <title>
+            KSK
+        </title>
+    </head>
+    <body>
+        <div class="b">
+            <center>
+                <a href="">Restart</a>
+                KSK
+                <a href="about:bank">Shutdown</a>
+            </center>
+        </div>
+        <div class="s">
+            <br>
+            <form action="https://www.google.co.in/">
+                <button>
+                     Google
+                </button>
+            </form><br>
+            <form action="https://mail.google.com/">
+                <button>
+                     Gmail
+                </button>
+            </form><br>
+            <form action="https://classroom.google.com/u/1/c/">
+                <button>
+                     Classroom
+                </button>
+            </form><br>
+            <form action="https://www.youtube.com/">
+                <button>
+                     YouTube
+                </button>
+            </form><br>
+            <form action="https://meet.google.com/">
+                <button>
+                     Meet
+                </button>
+            </form><br>
+            <form action="https://hangouts.google.com/">
+                <button>
+                     Hangouts
+                </button>
+            </form><br>
+            <form action="https://photos.google.com/">
+                <button>
+                     Photos
+                </button>
+            </form><br>
+            <form action="https://drive.google.com/">
+                <button>
+                     Drive
+                </button>
+            </form><br>
+            <form action="https://maps.google.com/">
+                <button>
+                     Maps
+                </button>
+            </form><br>
+            <form action="https://calendar.google.com/">
+                <button>
+                     Calendar
+                </button>
+            </form><br>
+            <form action="https://keep.google.com/">
+                <button>
+                     Keep
+                </button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="t">
+            <center>
+                <br>
+            <button>
+            </head>                                         
+            <body>
+              
+  </head>
+  <body onload="initClock()">
+                <!--digital clock start-->
+  <div class="datetime">
+    <div class="date">
+      <span id="dayname">Day</span>,
+      <span id="month">Month</span>
+      <span id="daynum">00</span>,
+      <span id="year">Year</span>
+    </div>
+    <div class="time">
+      <span id="hour">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+      <span id="period">AM</span>
+    </div>
+  </div>
+  <!--digital clock end-->
+
+  <script type="text/javascript">
+  function updateClock(){
+    var now = new Date();
+    var dname = now.getDay(),
+        mo = now.getMonth(),
+        dnum = now.getDate(),
+        yr = now.getFullYear(),
+        hou = now.getHours(),
+        min = now.getMinutes(),
+        sec = now.getSeconds(),
+        pe = "AM";
+        
+        if(hou >= 12){
+          pe = "PM";
+        }
+        if(hou == 0){
+          hou = 12;
+        }
+        if(hou > 12){
+          hou = hou - 12;
+        }
+
+        Number.prototype.pad = function(digits){
+          for(var n = this.toString(); n.length < digits; n = 0 + n);
+          return n;
+        }
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+        var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+        var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+        for(var i = 0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+  }
+
+  function initClock(){
+    updateClock();
+    window.setInterval("updateClock()", 1);
+  }
+  </script> <br>
+  </body>
+            <a href="https://www.google.com/">
+                Google
+            </a>
+            <a href="https://mail.google.com/">
+                Gmail
+            </a>
+            <a href="https://classroom.google.com/">
+                Classroom
+            </a>
+            <a href="https://www.youtube.com/">
+                YouTube
+            </a>
+            <a href="https://meet.google.com/">
+                Meet
+            </a>
+            <a href="https://hangouts.google.com/">
+                Hangouts
+            </a>
+            <a href="https://drive.google.com/">
+                Drive
+            </a>
+            <a href="https://photos.google.com/">
+                Photos
+            </a>
+            <a href="https://maps.google.com/">
+                Maps
+            </a>
+            <a href="https://drive.google.com/">
+                Drive
+            </a>
+            <a href="https://calendar.google.com/">
+                Calendar
+            </a>
+            <a href="https://keep.google.com/">
+                Keep
+            </a>
+            </button>
+            </center>
+        </div>
+    </body>
+</html>

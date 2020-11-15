@@ -1,0 +1,38 @@
+body{
+    font-family: Cotlas, sans-serif;
+    background-image: url(wall.jpg);
+}
+
+div.b{
+    background-color: rgba(0, 0, 0, 0.795);
+    color: #ffffff;
+}
+
+div.t{
+    background-color: rgba(0, 0, 0, 0.795);
+    color: #ffffff;
+    font-size: 2px;
+}
+button{
+    background-color: rgba(0, 0, 0, 0.795);
+        border-radius: 5px;
+        padding: 4px;
+        text-decoration: none;
+        transition: all .1s;
+        border-bottom-color: rgb(35, 64, 74);
+        outline: 0;
+        display: block;
+        color: #ffffff;
+        text-shadow: 1px 1px #1f272b;
+        border: 0px solid #1c252b;
+        margin: 1px 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    left: 00%;
+}
+
+a{
+    color: #ffffff;
+}
